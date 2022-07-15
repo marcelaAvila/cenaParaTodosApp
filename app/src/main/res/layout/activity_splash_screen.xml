@@ -18,19 +18,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.161" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="350dp"
-        android:layout_height="336dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="70"
-        android:background="@color/white"
+    <ImageView
+        android:id="@+id/Img_mano_asa"
+        android:layout_width="164dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo_asa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/imgmanoayuda"
+        />
+
+    <ProgressBar
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:indeterminateTint="@color/blueDesingPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".58"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1" />
+        app:layout_constraintTop_toBottomOf="@+id/Img_mano_asa"
+        app:layout_constraintVertical_bias="0.304" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
