@@ -62,6 +62,10 @@ class Login : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
+        binding.txtVRegistrarseLogin.setOnClickListener {
+            val intent = Intent(this, Registro::class.java)
+            startActivity(intent)
+        }
     }
 
 
