@@ -7,97 +7,122 @@
     android:background="@drawable/background"
     tools:context=".Login">
 
-    <ImageView
-        android:id="@+id/logo_asa"
-        android:layout_width="225dp"
-        android:layout_height="235dp"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@drawable/shape_login_panel_2"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingTop="20dp"
-        android:paddingRight="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/logo_asa">
-
-        <TextView
-            android:id="@+id/txt_titlulo_inicarSeccion_al"
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Iniciar Seccion"
-            android:textAlignment="center"
-            android:textColor="#2D45E0"
-            android:textSize="26dp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo_asa"
+                android:layout_width="225dp"
+                android:layout_height="235dp"
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"/>
 
-        <EditText
-            android:id="@+id/Edtv_user_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="#F3FBFF"
-            android:drawableStart="@drawable/ic_user"
-            android:ems="10"
-            android:hint="  Correo electronico"
-            android:minHeight="48dp" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/shape_login_panel_2"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/logo_asa"
+                app:layout_constraintTop_toBottomOf="@+id/logo_asa">
 
-        <EditText
-            android:id="@+id/Edtv_contrasena_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="#F3FBFF"
-            android:drawableStart="@drawable/ic_key"
-            android:ems="10"
-            android:hint="  Contraseña"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+                <TextView
+                    android:id="@+id/txt_titlulo_inicarSeccion_al"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Iniciar Sesion"
+                    android:textAlignment="center"
+                    android:textColor="#2D45E0"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_iniciarSesion_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/botones_redondos"
-            android:text="Ingresar"
-            android:textColor="#FFFFFF" />
+                <EditText
+                    android:id="@+id/Edtv_user_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F3FBFF"
+                    android:drawableStart="@drawable/ic_user"
+                    android:ems="10"
+                    android:hint="  Correo electronico"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/Edtv_contrasena_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F3FBFF"
+                    android:drawableStart="@drawable/ic_key"
+                    android:ems="10"
+                    android:hint="  Contraseña"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Olvidaste tú contraseña?" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtV_olvido_pass_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Recuperala!"
+                        android:textColor="#2D45E0" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_iniciarSesion_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botones_redondos"
+                    android:text="Ingresar"
+                    android:textColor="#FFFFFF" />
 
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/linearLayout">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Todavia no tienes cuenta?" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Todavia no tienes cuenta?" />
 
-        <Space
-            android:layout_width="10dp"
-            android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/txtV_registrarse_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="28dp"
-            android:text="Registrate!"
-            android:textColor="#2D45E0" />
-    </LinearLayout>
-
-
+                <TextView
+                    android:id="@+id/txtV_registrarse_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:text="Registrate!"
+                    android:textColor="#2D45E0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
