@@ -5,32 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".ActivitySplashScreen">
-
-    <ImageView
-        android:id="@+id/logo_asa"
-        android:layout_width="225dp"
-        android:layout_height="235dp"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="350dp"
-        android:layout_height="336dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="70"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".58"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".ActivitySplashScreen"/>
