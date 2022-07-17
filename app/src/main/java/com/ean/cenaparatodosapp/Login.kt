@@ -2,7 +2,6 @@ package com.ean.cenaparatodosapp
 
 import android.content.ContentValues
 import android.content.Intent
-import android.graphics.Paint
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -40,7 +39,7 @@ class Login : AppCompatActivity() {
                                 Toast.makeText(baseContext, "Bienvenido", Toast.LENGTH_SHORT).show()
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(ContentValues.TAG, "signInWithCustomToken:success")
-                                val intent = Intent(this, MainActivity::class.java)
+                                val intent = Intent(this, HomeFundacion::class.java)
                                 startActivity(intent)
                             } else {
                                 // If sign in fails, display a message to the user.
