@@ -13,23 +13,24 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/logo_asa"
                 android:layout_width="225dp"
                 android:layout_height="235dp"
-                android:src="@drawable/logo"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
+                android:layout_below="@+id/logo_asa"
                 android:background="@drawable/shape_login_panel_2"
                 android:orientation="vertical"
                 android:paddingLeft="50dp"
                 android:paddingTop="20dp"
                 android:paddingRight="50dp"
-                android:layout_below="@+id/logo_asa"
                 app:layout_constraintTop_toBottomOf="@+id/logo_asa">
 
                 <TextView
